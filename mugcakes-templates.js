@@ -12,10 +12,10 @@ __p += '<div class="cake">\n  <div class="details">\n\n    <h3><span class="bold
 '">' +
 ((__t = ( cake['Twitter account'] )) == null ? '' : __t) +
 '</a>\n    </div>\n    <hr>\n\n    <span class="detail rating ' +
-((__t = ( cake['Rating'] > 7 ? 'good' : (cake['Rating'] > 3 ? 'medium' : 'bad') )) == null ? '' : __t) +
-'">\n      Rating: ' +
+((__t = ( cake['Rating'] >= 7 ? 'good' : (cake['Rating'] > 3 ? 'medium' : 'bad') )) == null ? '' : __t) +
+'">\n      Rating: <span class="stars">' +
 ((__t = ( cake['Rating'] )) == null ? '' : __t) +
-' out of 10.\n    </span>\n    ';
+'</span>\n    </span>\n    ';
  if (cake['Qualitative Yumminess'] !== null) { ;
 __p += '\n      <span class="detail">Qualitative Yumminess: ' +
 ((__t = ( cake['Qualitative Yumminess'] )) == null ? '' : __t) +
@@ -29,7 +29,7 @@ __p += '\n        in a ' +
 ((__t = ( cake['Microwave Wattage'] )) == null ? '' : __t) +
 ' microwave.\n      ';
  } ;
-__p += '\n    </span>\n\n    <h3>Ingredients:</h3>\n    ';
+__p += '\n    </span>\n\n    <h3>Ingredients</h3>\n    ';
  _.each(cake, function(val, key) { ;
 __p += '\n      ';
  if (controls.indexOf(key) === -1 && val !== null) { ;
