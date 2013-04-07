@@ -1,0 +1,161 @@
+// -----------------------------------------
+// Colors
+
+@background-color: #E4E4E4;
+@secondary-background-color: #F9F9F9;
+@section-color: white;
+@border-color: #D6D6D6;
+@secondary-text-color: #4C4C4C;
+@tile-hover: #e9e9e9;
+
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  a {
+    color: @shadowcolor;
+    font-weight: bold;
+    text-decoration:none;
+  }
+  a:hover {
+    color: #d64078;
+  }
+
+  .gradient
+}
+
+#all {
+  width:100%;
+  position: absolute;
+}
+
+header, footer, #content {
+  width: 980px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+header {
+  color: white;
+
+  h1 {
+    font-style:italic;
+    font-size: 100px;
+    margin-bottom: 0px;
+    .purpleshadow
+  }
+
+  h2 {
+    margin-top : 0px;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px;
+    .purpleshadow
+  }
+}
+
+#content {
+  margin-bottom: 40px;
+
+  h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    color: white;
+    margin-top: 40px;
+  }
+  a.button {
+    background-color: #d64078;
+    color: white;
+    border-radius: .3em;
+    padding: 1em;
+    position: relative;
+    margin: auto 0;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    border: solid #b03060 1px;
+    border-bottom: solid #b03060 4px;
+    text-shadow: 0px 2px 0 #b03060;
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+  }
+
+  a.button:hover {
+    background-color: #c63b6f;
+  }
+
+  a.button:active {
+    border-bottom: solid #b03060 1px;
+    top: 4px;
+    -webkit-transition: all 0 ease-out;  /* Safari 3.2+, Chrome */
+       -moz-transition: all 0 ease-out;  /* Firefox 4-15 */
+         -o-transition: all 0 ease-out;  /* Opera 10.5–12.00 */
+            transition: all 0 ease-out;  /* Firefox 16+, Opera 12.50+ */
+  }
+
+  span.bold {
+    font-weight: bold;
+    color: white;
+    text-shadow: 4px 4px @shadowcolor;
+    font-size: .9em;
+  }
+
+  .instructions {
+    text-align: center;
+  }
+  .cake {
+    border: 1px solid @shadowcolor;
+    padding: 20px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, .2);
+
+    hr {
+      border: 0;
+      color: #f00;
+      background-color: @shadowcolor;
+      height: 2px;
+    }
+
+    .photo {
+      float:right;
+      margin-left: 20px;
+
+      img {
+        border: 2px solid white;
+      }
+    }
+
+    .details {
+      float:left;
+      width: 600px;
+
+      h3 {
+        margin-top: 10px;
+      }
+      .detail {
+        display: block;
+      }
+      .rating.good {
+        color: green;
+      }
+      .rating.bad {
+        color:red;
+      }
+      .rating.medium {
+        color:orange;
+      }
+
+    }
+    .clearfix
+  }
+}
+
+footer {
+  padding-bottom: 20px;
+  text-align: center;
+  color: #222;
+}

@@ -1,0 +1,44 @@
+<div class="cake">
+  <div class="details">
+
+    <h3><span class="bold"><%= cake['Mugcake name'] %></span></h3>
+    <div class="by">
+      By <a href="http://twitter.com/<%= cake['Twitter account'].slice(1) %>"><%= cake['Twitter account'] %></a>
+    </div>
+    <hr>
+
+    <span class="detail rating <%= cake['Rating'] > 7 ? 'good' : (cake['Rating'] > 3 ? 'medium' : 'bad') %>">
+      Rating: <%= cake['Rating'] %> out of 10.
+    </span>
+    <% if (cake['Qualitative Yumminess'] !== null) { %>
+      <span class="detail">Qualitative Yumminess: <%= cake['Qualitative Yumminess'] %></span>
+    <% } %>
+    
+    <span class="detail">
+      Cook time: <%= cake['Microwave Time'] %> 
+      <% if (cake['Microwave Wattage']) { %>
+        in a <%= cake['Microwave Wattage'] %> microwave.
+      <% } %>
+    </span>
+
+    <h3>Ingredients:</h3>
+    <% _.each(cake, function(val, key) { %>
+      <% if (controls.indexOf(key) === -1 && val !== null) { %>
+        <span class="detail"><%= key %>: <%= val %></span>
+      <% } %>
+    <% }); %>
+
+    <% if (cake['Instructions'] !== null) { %>
+      <h3>Instructions</h3>  
+      <p><%= cake['Instructions'] %></p>
+    <% } %>
+  </div>
+
+  <div class="photo">
+    <% if (cake['Photo']) { %>
+      <img src="<%= cake['Photo'] %>" width="300" alt=""/>
+    <% } else { %>
+      <img src="img/no-image.jpg" width="300" alt=""/>
+    <% } %>
+  </div>
+</div>
