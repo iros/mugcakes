@@ -108,10 +108,10 @@ header {
     text-align: center;
   }
   .cake {
-    border: 1px solid @shadowcolor;
     padding: 20px;
     margin-bottom: 10px;
-    background: rgba(255, 255, 255, .2);
+    background: rgba(255, 255, 255, .3);
+    border-radius: .3em;
 
     hr {
       border: 0;
@@ -120,6 +120,9 @@ header {
       height: 2px;
     }
 
+    h3 {
+      font-size: 1.2em;
+    }
     .photo {
       float:right;
       margin-left: 20px;
@@ -139,16 +142,19 @@ header {
       .detail {
         display: block;
       }
-      .rating.good {
-        color: green;
+      span.stars {
+        margin-bottom: 10px;
       }
-      .rating.bad {
-        color:red;
-      }
-      .rating.medium {
-        color:orange;
+      span.stars, span.stars span {
+        display: block;
+        background: url(/img/stars.png) 0 -16px repeat-x;
+        width: 160px;
+        height: 16px;
       }
 
+      span.stars span {
+          background-position: 0 0;
+      }
     }
     .clearfix
   }

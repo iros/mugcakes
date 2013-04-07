@@ -50,11 +50,12 @@ header h2{margin-top:0px;color:white;font-family:'Press Start 2P',cursive;font-s
 #content a.button:active{border-bottom:solid #b03060 1px;top:4px;-webkit-transition:all 0 ease-out;-moz-transition:all 0 ease-out;-o-transition:all 0 ease-out;transition:all 0 ease-out;}
 #content span.bold{font-weight:bold;color:white;text-shadow:4px 4px #701575;font-size:.9em;}
 #content .instructions{text-align:center;}
-#content .cake{border:1px solid #701575;padding:20px;margin-bottom:10px;background:rgba(255, 255, 255, 0.2);overflow:auto;zoom:1;}#content .cake hr{border:0;color:#f00;background-color:#701575;height:2px;}
+#content .cake{padding:20px;margin-bottom:10px;background:rgba(255, 255, 255, 0.3);border-radius:.3em;overflow:auto;zoom:1;}#content .cake hr{border:0;color:#f00;background-color:#701575;height:2px;}
+#content .cake h3{font-size:1.2em;}
 #content .cake .photo{float:right;margin-left:20px;}#content .cake .photo img{border:2px solid white;}
 #content .cake .details{float:left;width:600px;}#content .cake .details h3{margin-top:10px;}
 #content .cake .details .detail{display:block;}
-#content .cake .details .rating.good{color:green;}
-#content .cake .details .rating.bad{color:red;}
-#content .cake .details .rating.medium{color:orange;}
+#content .cake .details span.stars{margin-bottom:10px;}
+#content .cake .details span.stars,#content .cake .details span.stars span{display:block;background:url(/img/stars.png) 0 -16px repeat-x;width:160px;height:16px;}
+#content .cake .details span.stars span{background-position:0 0;}
 footer{padding-bottom:20px;text-align:center;color:#222;}

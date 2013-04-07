@@ -7,8 +7,8 @@
     </div>
     <hr>
 
-    <span class="detail rating <%= cake['Rating'] > 7 ? 'good' : (cake['Rating'] > 3 ? 'medium' : 'bad') %>">
-      Rating: <%= cake['Rating'] %> out of 10.
+    <span class="detail rating <%= cake['Rating'] >= 7 ? 'good' : (cake['Rating'] > 3 ? 'medium' : 'bad') %>">
+      Rating: <span class="stars"><%= cake['Rating'] %></span>
     </span>
     <% if (cake['Qualitative Yumminess'] !== null) { %>
       <span class="detail">Qualitative Yumminess: <%= cake['Qualitative Yumminess'] %></span>
@@ -21,7 +21,7 @@
       <% } %>
     </span>
 
-    <h3>Ingredients:</h3>
+    <h3>Ingredients</h3>
     <% _.each(cake, function(val, key) { %>
       <% if (controls.indexOf(key) === -1 && val !== null) { %>
         <span class="detail"><%= key %>: <%= val %></span>
