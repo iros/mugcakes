@@ -60,7 +60,8 @@ module.exports = function(grunt) {
           {src: ['src/html/*'], dest: 'dest/', expand: true, flatten: true},
           {cwd: 'src/lib', src: ['**'], dest : 'dest/lib', expand:true },
           {src: ['src/img/*'], dest: 'dest/img', expand: true, flatten: true},
-          {src: ['src/img/cakes/*'], dest: 'dest/img/cakes', expand: true, flatten: true}
+          {src: ['src/img/cakes/*'], dest: 'dest/img/cakes', expand: true, flatten: true},
+          {src: ['favicon.ico'], dest: 'dest/'}
         ]
       },
       html: {
