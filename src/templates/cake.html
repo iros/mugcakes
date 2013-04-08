@@ -1,7 +1,6 @@
 <div class="cake">
   <div class="details">
-
-    <h3><span class="bold"><%= cake['Mugcake name'] %></span></h3>
+    <h3><span class="bold"><a href="?cake=<%= cake['Mugcake name']%>"><%= cake['Mugcake name'] %></a></span></h3>
     <div class="by">
       By <a href="http://twitter.com/<%= cake['Twitter account'].slice(1) %>"><%= cake['Twitter account'] %></a>
     </div>
