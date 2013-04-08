@@ -5,9 +5,11 @@ obj || (obj = {});
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 with (obj) {
-__p += '<div class="cake">\n  <div class="details">\n\n    <h3><span class="bold">' +
+__p += '<div class="cake">\n  <div class="details">\n    <h3><span class="bold"><a href="?cake=' +
+((__t = ( cake['Mugcake name'])) == null ? '' : __t) +
+'">' +
 ((__t = ( cake['Mugcake name'] )) == null ? '' : __t) +
-'</span></h3>\n    <div class="by">\n      By <a href="http://twitter.com/' +
+'</a></span></h3>\n    <div class="by">\n      By <a href="http://twitter.com/' +
 ((__t = ( cake['Twitter account'].slice(1) )) == null ? '' : __t) +
 '">' +
 ((__t = ( cake['Twitter account'] )) == null ? '' : __t) +
